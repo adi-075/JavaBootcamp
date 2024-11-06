@@ -37,5 +37,12 @@ public class primitiveTypes {
         // Long can store more values than an int - possibly when you want to keep track of users visiting your website, you can use this to avoid overflow condition
         long myLongValue = Long.MAX_VALUE;
         System.out.println("Long Maximum Value = " + myLongValue);
+
+        // You cannot use commas in numeric literals
+        // int myMaxIntTest = 2,147,483,647;
+
+        // Alternatively, you can use the following
+        int myMaxIntTest = 2_147_483_647;
+        System.out.println(myMaxIntTest);
     }
 }
